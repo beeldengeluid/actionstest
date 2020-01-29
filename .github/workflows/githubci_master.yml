@@ -1,6 +1,9 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - "master"
 
 jobs:
   build:
@@ -14,4 +17,4 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
-        echo this is done on any push.
+        echo this was done on push branches master.
