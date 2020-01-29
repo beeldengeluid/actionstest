@@ -1,6 +1,9 @@
 name: anypush
 
-on: [push]
+on:
+  push:
+    branches-ignore:
+      - "master"
 
 jobs:
   build:
